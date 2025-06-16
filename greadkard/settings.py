@@ -139,6 +139,20 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+   messages.ERROR: 'danger',
+}   
+
+#-------------------------------------------------------------------------- عشان الايميل تبعت بشاغل في وقت اخر
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'ibrahim11i00ib@gmail.com'
+EMAIL_HOST_PASSWORD = '123456789Ibrahim'
+EMAIL_USE_TLS = True
+#---------------------------------------------------------------------------
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
